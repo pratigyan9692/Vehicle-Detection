@@ -1,29 +1,39 @@
-🚗 Real-Time Vehicle Detection Using OpenCV and Haar Cascades
-Welcome to the Vehicle Detection System, a Python-based project that demonstrates how to detect and count vehicles from video footage using the power of OpenCV and Haar Cascade classifiers. This application provides a real-time visual interface that identifies vehicles within each frame, outlines them with bounding boxes, and updates the count dynamically as the video plays.
+# 🚗 Vehicle Detection using OpenCV and Haar Cascades
 
-The project is designed for developers, students, and researchers who are interested in learning about computer vision, video analysis, or traffic monitoring systems. Using a pre-trained model (haarcascade_car.xml), it enables fast and efficient detection of cars without the need for extensive training or external dependencies.
+This Python project detects vehicles in a video using a pre-trained Haar Cascade classifier with OpenCV. It highlights detected vehicles in real-time and displays the vehicle count on each frame.
 
-Whether you're analyzing traffic flow, building a smart city prototype, or simply learning how object detection works, this project provides a clean, easy-to-understand implementation that's perfect for hands-on experimentation.
+## 📂 Project Structure
 
-✨ Key Highlights
-📹 Detects cars from a pre-recorded video or live webcam stream
+vehicle_detection/
+├── haarcascade_car.xml # Haar cascade XML file for vehicle detection
+├── myvideo.mp4.mp4 # Input video file (replace with your own)
+├── vehicle_detection.py # Main Python script
 
-🟩 Draws bounding boxes around detected vehicles in real time
+## ✅ Features
 
-🔢 Displays a live vehicle count per frame
+- Detects cars in real-time from a video file or webcam
+- Draws bounding boxes around detected vehicles
+- Displays vehicle count on each frame
+- Lightweight and easy to use
 
-🧠 Uses a pre-trained Haar cascade XML classifier
+## 🛠 Requirements
 
-⚡ Lightweight, fast, and easy to modify for your own use
+- Python 3.x
+- OpenCV (`opencv-python`)
+- NumPy
 
+Install dependencies using:
 
+```bash
+pip install opencv-python numpy
+📥 Setup
+Clone or download this repository.
 
+Download the Haar Cascade XML file from:
+haarcascade_car.xml
+and place it in the same directory.
 
-
-
-
-
-
-
-
-
+Replace the video_path variable with your own video file path (or set it to 0 for webcam).
+▶️ How to Run
+python vehicle_detection.py
+Press Q to quit the window.
